@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Dummy dataset for Swaradhyayan – Raaga Knowledge Module.
+  Structured after the descriptive scheme Pt. Bhatkhande uses in
+  Kramik Pustak Malika, Vol. 2 (Thaat, Jati, Aroh/Avroh, Vadi/Samvadi,
+  Pakad, Chalan, compositions, etc.). Content here is illustrative
+  placeholder data for building/testing the app, not a verified
+  transcription of the book.
+-->
+<raagas>
+
+  <raaga id="yaman">
+    <name>Yaman</name>
+    <thaat>Kalyan</thaat>
+    <jati>Sampoorna - Sampoorna</jati>
+    <aroh>N R G M# P D N S'</aroh>
+    <avroh>S' N D P M# G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Nishad (N)</samvadi>
+    <pakad>N R G, M#P, D N S' | S' N D P, M#G R S</pakad>
+    <chalan>N R G M#, G R S | R G M#, P D N D P, M#G R S</chalan>
+    <nyasSwar>G, N</nyasSwar>
+    <varjitSwar>None</varjitSwar>
+    <timeOfPerformance>Evening (6 PM - 9 PM)</timeOfPerformance>
+    <season>All Seasons (best in Sharad)</season>
+    <rasa>Peaceful, Devotional, Serene</rasa>
+    <difficulty>Intermediate</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>Teevra Ma (M#) is the signature swara of Raag Yaman.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Sur Sangat Rag Gyan Kari</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Ektaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+      <composition>
+        <title>Eri Aali Piya Bin</title>
+        <type>Bandish (Drut)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="kalyan" relation="Same Thaat"/>
+      <similar id="puriya-kalyan" relation="Evening Raga"/>
+      <similar id="shuddha-kalyan" relation="Different Prayog"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Focus on the smooth glide (meend) between N-R and G-M#.</tip>
+      <tip>Do not touch Ma natural; only use Teevra Ma (M#).</tip>
+      <tip>Spend time on the Pakad and Chalan to internalize the identity of Yaman.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Omkarnath Thakur">Yaman is a Raag of light and devotion. Let your Riyaz in the evening be your offering.</guruQuote>
+  </raaga>
+
+  <raaga id="kalyan">
+    <name>Kalyan</name>
+    <thaat>Kalyan</thaat>
+    <jati>Sampoorna - Sampoorna</jati>
+    <aroh>S R G M# P D N S'</aroh>
+    <avroh>S' N D P M# G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Nishad (N)</samvadi>
+    <pakad>S R G M#, P D P, M#G R S</pakad>
+    <chalan>S R G M# P D N S' | S' N D P M# G R S</chalan>
+    <nyasSwar>S, P</nyasSwar>
+    <varjitSwar>None</varjitSwar>
+    <timeOfPerformance>Evening (6 PM - 9 PM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Peaceful, Devotional</rasa>
+    <difficulty>Beginner</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>The parent-thaat raaga - a straight, sampoorna form using Teevra Ma throughout.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Aayo Piya Ghar Aayo</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="yaman" relation="Same Thaat"/>
+      <similar id="shuddha-kalyan" relation="Related Prakar"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Keep the Aroh and Avroh perfectly straight (sampoorna both ways) before exploring Yaman's curves.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Vishnu Narayan Bhatkhande">Kalyan is the thaat made audible in its simplest, straightest form.</guruQuote>
+  </raaga>
+
+  <raaga id="bhupali">
+    <name>Bhupali</name>
+    <thaat>Kalyan</thaat>
+    <jati>Audav - Audav</jati>
+    <aroh>S R G P D S'</aroh>
+    <avroh>S' D P G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Dhaivat (D)</samvadi>
+    <pakad>G R S, R G P, G P D, P D G R S</pakad>
+    <chalan>S R G P D S' | S' D P G R S</chalan>
+    <nyasSwar>S, G, P</nyasSwar>
+    <varjitSwar>Ma, Ni</varjitSwar>
+    <timeOfPerformance>Evening (6 PM - 9 PM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Joyful, Contentment</rasa>
+    <difficulty>Beginner</difficulty>
+    <notesUsed>5</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>An audav (pentatonic) raga using only S R G P D, ideal as a first raga for beginners.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Sakhi More Sainya</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="deshkar" relation="Similar Notes"/>
+      <similar id="shuddha-kalyan" relation="Same Thaat"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Practice slow meend between G and P to bring out the raga's calm character.</tip>
+      <tip>Avoid any hint of Ma or Ni; the identity rests on the five clean swaras.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Vishnu Narayan Bhatkhande">Simplicity of Bhupali is its greatest ornament.</guruQuote>
+  </raaga>
+
+  <raaga id="bhimpalasi">
+    <name>Bhimpalasi</name>
+    <thaat>Kafi</thaat>
+    <jati>Audav - Sampoorna</jati>
+    <aroh>N. S g M P n S'</aroh>
+    <avroh>S' n D P, M P g M g R S</avroh>
+    <vadi>Madhyam (M)</vadi>
+    <samvadi>Shadja (S)</samvadi>
+    <pakad>g M P, n D P, M P g M g R S</pakad>
+    <chalan>N. S g M P, M P n D P, M P g M g R S</chalan>
+    <nyasSwar>S, M, P</nyasSwar>
+    <varjitSwar>Re and Dha varjit in Aroh</varjitSwar>
+    <timeOfPerformance>Afternoon (12 PM - 3 PM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Longing, Pathos, Devotional</rasa>
+    <difficulty>Intermediate</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>Komal Gandhar and Komal Nishad give Bhimpalasi its characteristic pathos.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Ja Ja Re Apne Mandirwa</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Jhaptaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="dhani" relation="Same Notes, Different Time"/>
+      <similar id="kafi" relation="Same Thaat"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Approach Ni komal always from Dha, never directly.</tip>
+      <tip>Keep Re and Dha completely varjit in the Aroh for a clean ascent.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Bhatkhande">The soul of Bhimpalasi lies in its gentle andolan on Ga and Ni.</guruQuote>
+  </raaga>
+
+  <raaga id="kedar">
+    <name>Kedar</name>
+    <thaat>Kalyan</thaat>
+    <jati>Audav/Shadav - Sampoorna</jati>
+    <aroh>S M P M D N S'</aroh>
+    <avroh>S' N D P M# P M G, M P G S</avroh>
+    <vadi>Madhyam (M)</vadi>
+    <samvadi>Shadja (S)</samvadi>
+    <pakad>M P M G, M P D N D P M#P M G S</pakad>
+    <chalan>S M P M D N S' | S' N D P M#P M G S</chalan>
+    <nyasSwar>S, M, P</nyasSwar>
+    <varjitSwar>Re, Ga in Aroh</varjitSwar>
+    <timeOfPerformance>Night (9 PM - 12 AM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Devotional, Grandeur</rasa>
+    <difficulty>Intermediate</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>Uses both shuddha and teevra Ma, a distinguishing feature within the Kalyan family.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Sundar Sej Sohe</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Ektaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="hameer" relation="Similar Prayog"/>
+      <similar id="yaman" relation="Same Thaat"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Use both Ma shuddha and Ma teevra deliberately, not interchangeably.</tip>
+      <tip>Emphasise the Madhyam-Pancham movement that defines Kedar's grandeur.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Omkarnath Thakur">Kedar carries the weight of the night in its steady Madhyam.</guruQuote>
+  </raaga>
+
+  <raaga id="bihag">
+    <name>Bihag</name>
+    <thaat>Bilawal</thaat>
+    <jati>Audav/Shadav - Sampoorna</jati>
+    <aroh>N S G M P N S'</aroh>
+    <avroh>S' N D P M G M G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Nishad (N)</samvadi>
+    <pakad>G M P, N S', S' N D P, M G M G R S</pakad>
+    <chalan>N S G M P N S' | S' N D P M G R S</chalan>
+    <nyasSwar>S, G, P</nyasSwar>
+    <varjitSwar>Re, Dha in Aroh</varjitSwar>
+    <timeOfPerformance>Night (9 PM - 12 AM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Romantic, Sweetness</rasa>
+    <difficulty>Intermediate</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>The Ma-Ga-Ma-Ga oscillation gives Bihag its sweet, romantic flavour.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Piya Bin Nahi Aavat Chain</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="shuddha-bihag" relation="Related Prakar"/>
+      <similar id="maru-bihag" relation="Kalyan-Bilawal Mix"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Practice the Ma-Ga andolan slowly before adding speed.</tip>
+      <tip>Keep Re and Dha out of the ascent for authentic Bihag colour.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Vishnu Narayan Bhatkhande">Bihag's charm is in restraint, not in showing every note.</guruQuote>
+  </raaga>
+
+  <raaga id="desh">
+    <name>Desh</name>
+    <thaat>Khamaj</thaat>
+    <jati>Audav/Shadav - Sampoorna</jati>
+    <aroh>S R M P N S'</aroh>
+    <avroh>S' n D P M G R S</avroh>
+    <vadi>Rishabh (R)</vadi>
+    <samvadi>Pancham (P)</samvadi>
+    <pakad>R M P, N S', S' n D P, M G R S</pakad>
+    <chalan>S R M P N S' | S' n D P M G R S</chalan>
+    <nyasSwar>S, R, P</nyasSwar>
+    <varjitSwar>Ga, Dha in Aroh</varjitSwar>
+    <timeOfPerformance>Night (9 PM - 12 AM)</timeOfPerformance>
+    <season>Monsoon</season>
+    <rasa>Patriotic, Romantic</rasa>
+    <difficulty>Beginner</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>Both Nishad shuddha and komal are used, one going up and one coming down.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Baaje Re Muraliya Baaje</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="tilak-kamod" relation="Same Thaat Family"/>
+      <similar id="khamaj" relation="Parent Thaat"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Use Ni shuddha in Aroh and Ni komal in Avroh - keep the two distinct.</tip>
+      <tip>Desh is closely tied to Thumri and folk idiom; let the phrasing stay light.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Omkarnath Thakur">Desh sings of the monsoon and of the motherland alike.</guruQuote>
+  </raaga>
+
+  <raaga id="puriya-kalyan">
+    <name>Puriya Kalyan</name>
+    <thaat>Kalyan</thaat>
+    <jati>Sampoorna - Sampoorna</jati>
+    <aroh>N R G M# D N S'</aroh>
+    <avroh>S' N D M# G, M# R G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Nishad (N)</samvadi>
+    <pakad>N R G, M#D N, D M#G, M#R G R S</pakad>
+    <chalan>N R G M#D N S' | S' N D M#G R S</chalan>
+    <nyasSwar>G, N</nyasSwar>
+    <varjitSwar>Pancham (P) largely avoided</varjitSwar>
+    <timeOfPerformance>Evening (6 PM - 9 PM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Grand, Devotional</rasa>
+    <difficulty>Advanced</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>No</practiceFriendly>
+    <signatureNote>Combines the Marwa-ang Re-Ga movement with the Kalyan-ang Ma teevra.</signatureNote>
+    <compositions>
+      <composition>
+        <title>Kaise Sukh Sove</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Ektaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="yaman" relation="Evening Raga"/>
+      <similar id="marwa" relation="Shares Re-Ga Movement"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Avoid Pancham almost entirely to preserve the grand, Marwa-tinged mood.</tip>
+      <tip>The Re-Ga phrase must be sung with the same weight as in Raag Marwa.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Vishnu Narayan Bhatkhande">Puriya Kalyan borrows Marwa's gravity and Kalyan's light in equal measure.</guruQuote>
+  </raaga>
+
+  <raaga id="shuddha-kalyan">
+    <name>Shuddha Kalyan</name>
+    <thaat>Kalyan</thaat>
+    <jati>Audav/Shadav - Sampoorna</jati>
+    <aroh>S R G P D S'</aroh>
+    <avroh>S' N D P M G R S</avroh>
+    <vadi>Gandhar (G)</vadi>
+    <samvadi>Dhaivat (D)</samvadi>
+    <pakad>G P D, P G, M G R S</pakad>
+    <chalan>S R G P D S' | S' N D P M G R S</chalan>
+    <nyasSwar>S, G, P</nyasSwar>
+    <varjitSwar>Ma, Ni largely avoided in Aroh</varjitSwar>
+    <timeOfPerformance>Evening (6 PM - 9 PM)</timeOfPerformance>
+    <season>All Seasons</season>
+    <rasa>Peaceful, Sweetness</rasa>
+    <difficulty>Intermediate</difficulty>
+    <notesUsed>7</notesUsed>
+    <practiceFriendly>Yes</practiceFriendly>
+    <signatureNote>Essentially Bhupali's melodic body with Ma and Ni introduced lightly in the Avroh.</signatureNote>
+    <compositions>
+      <composition>
+        <title>More Mandirwa Aao</title>
+        <type>Bandish (Vilambit)</type>
+        <taal>Teentaal</taal>
+        <source>Kramik Pustak Malika, Vol. 2</source>
+      </composition>
+    </compositions>
+    <similarRaagas>
+      <similar id="bhupali" relation="Base Structure"/>
+      <similar id="yaman" relation="Same Thaat"/>
+    </similarRaagas>
+    <learningTips>
+      <tip>Introduce Ma and Ni only lightly - never let them dominate over the Bhupali skeleton.</tip>
+      <tip>Keep the G-P leap smooth; it is the most recognisable phrase of the raga.</tip>
+    </learningTips>
+    <guruQuote author="Pt. Omkarnath Thakur">Shuddha Kalyan is Bhupali dressed for the evening.</guruQuote>
+  </raaga>
+
+</raagas>

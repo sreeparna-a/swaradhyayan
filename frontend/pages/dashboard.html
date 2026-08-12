@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dashboard — Swaradhyayan</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard-page.css">
+</head>
+<body data-page="dashboard">
+
+<!-- ========================================================
+     TOP BAR
+     ======================================================== -->
+<header class="topbar">
+  <a class="brand" href="../index.html" aria-label="Swaradhyayan home">
+    <div class="brand-icon" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/>
+        <polyline points="8 17 8 5 20 3 20 15"/>
+        <line x1="8" y1="11" x2="20" y2="9"/>
+      </svg>
+    </div>
+    <span class="brand-copy">
+      <span class="brand-title">Swaradhyayan</span>
+      <span class="brand-subtitle">Indian Classical Music Portal</span>
+    </span>
+  </a>
+
+  <div class="topbar-search" role="search">
+    <span class="search-icon" aria-hidden="true">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </span>
+    <input type="search" placeholder="Search raagas, talas, compositions..." aria-label="Global search">
+    <span class="kbd">⌘K</span>
+  </div>
+
+  <div class="topbar-right">
+    <button class="notif-btn" aria-label="Notifications (3 unread)" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span class="notif-badge" aria-hidden="true">3</span>
+    </button>
+    <div class="user-chip" role="button" tabindex="0" aria-label="User menu">
+      <div class="user-avatar" aria-hidden="true">AS</div>
+      <div class="user-info">
+        <span class="user-name">Ananya Sharma</span>
+        <span class="user-role">Student</span>
+      </div>
+      <span class="user-chevron" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- ========================================================
+     APP BODY
+     ======================================================== -->
+<div class="app-body">
+
+  <!-- ---- SIDEBAR ---- -->
+  <aside class="sidebar" aria-label="Main navigation">
+    <nav class="nav-list">
+
+      <a class="nav-item active" href="dashboard.html" data-page="dashboard">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+
+      <a class="nav-item" href="courses.html" data-page="courses">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Courses
+      </a>
+
+      <a class="nav-item" href="practice.html" data-page="practice">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><polyline points="8 17 8 5 20 3 20 15"/><line x1="8" y1="11" x2="20" y2="9"/></svg>
+        Practice
+      </a>
+
+      <a class="nav-item" href="raaga-knowledge.html" data-page="raaga-knowledge">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        Raaga Knowledge
+      </a>
+
+      <a class="nav-item" href="tala-library.html" data-page="tala-library">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Tala Library
+      </a>
+
+      <a class="nav-item" href="compositions.html" data-page="compositions">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Compositions
+      </a>
+
+      <a class="nav-item" href="assignments.html" data-page="assignments">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Assignments
+      </a>
+
+      <a class="nav-item" href="progress.html" data-page="progress">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Progress
+      </a>
+
+    </nav>
+
+    <div class="sidebar-cta">
+      <div class="sidebar-cta-star" aria-hidden="true">☆</div>
+      <div class="sidebar-cta-title">Keep going!</div>
+      <p class="sidebar-cta-text">Your dedication brings you closer to excellence.</p>
+      <a href="progress.html" class="sidebar-cta-link">View Progress →</a>
+    </div>
+  </aside>
+
+  <!-- ---- MAIN CONTENT ---- -->
+  <main class="content">
+
+    <!-- Welcome banner -->
+    <section class="db-welcome" aria-label="Welcome">
+      <div class="db-welcome-text">
+        <h1 id="welcome-heading">Welcome back, Ananya —</h1>
+        <p id="welcome-sub" class="page-sub">Intermediate · Learning since Jan 2024</p>
+      </div>
+      <div class="db-welcome-actions">
+        <a href="practice.html" class="btn btn-primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><polyline points="8 17 8 5 20 3 20 15"/><line x1="8" y1="11" x2="20" y2="9"/></svg>
+          Start Riyaz
+        </a>
+        <a href="assignments.html" class="btn btn-outline">View Assignments</a>
+      </div>
+    </section>
+
+    <!-- Stats row -->
+    <div class="db-stats-row" id="stats-row" aria-label="Learning statistics">
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">🔥</div>
+        <div>
+          <div class="stat-value">14</div>
+          <div class="stat-label">Day Streak</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">⏱️</div>
+        <div>
+          <div class="stat-value">42 <span class="stat-unit">hrs</span></div>
+          <div class="stat-label">Practice Time</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">🎵</div>
+        <div>
+          <div class="stat-value">18</div>
+          <div class="stat-label">Raagas Explored</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">📋</div>
+        <div>
+          <div class="stat-value">3</div>
+          <div class="stat-label">Pending Tasks</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon" aria-hidden="true">📈</div>
+        <div>
+          <div class="stat-value">72<span class="stat-unit">%</span></div>
+          <div class="stat-label">Course Progress</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main dashboard grid -->
+    <div class="db-main-grid">
+
+      <!-- LEFT COLUMN -->
+      <div class="db-col-main">
+
+        <!-- My Courses -->
+        <section class="panel db-panel" aria-labelledby="courses-heading">
+          <div class="db-panel-header">
+            <h2 id="courses-heading">My Courses</h2>
+            <a href="courses.html" class="db-panel-link">View all →</a>
+          </div>
+          <div id="courses-list" class="courses-list">
+
+            <div class="course-item">
+              <div class="course-top">
+                <span class="course-title">Hindustani Vocal — Level 1</span>
+                <span class="course-pct">72%</span>
+              </div>
+              <div class="course-instructor">with Pt. Ravi Deshmukh</div>
+              <div class="progress-bar"><div class="progress-fill" style="width:72%"></div></div>
+              <div class="course-next">Next: <b>Raag Bihag — Vilambit Bandish</b></div>
+            </div>
+
+            <div class="course-item">
+              <div class="course-top">
+                <span class="course-title">Tala Fundamentals</span>
+                <span class="course-pct">45%</span>
+              </div>
+              <div class="course-instructor">with Smt. Kavita Rao</div>
+              <div class="progress-bar"><div class="progress-fill" style="width:45%"></div></div>
+              <div class="course-next">Next: <b>Jhaptaal — Theka and Vibhag</b></div>
+            </div>
+
+            <div class="course-item">
+              <div class="course-top">
+                <span class="course-title">Raag Vistar &amp; Improvisation</span>
+                <span class="course-pct">18%</span>
+              </div>
+              <div class="course-instructor">with Pt. Ravi Deshmukh</div>
+              <div class="progress-bar"><div class="progress-fill" style="width:18%"></div></div>
+              <div class="course-next">Next: <b>Alap Structure in Yaman</b></div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- Assignments -->
+        <section class="panel db-panel" aria-labelledby="assignments-heading">
+          <div class="db-panel-header">
+            <h2 id="assignments-heading">Assignments</h2>
+            <a href="assignments.html" class="db-panel-link">View all →</a>
+          </div>
+          <ul id="assignments-list" class="assignments-list">
+
+            <li>
+              <div class="assignment-info">
+                <div class="assignment-title">Bandish in Raag Yaman</div>
+                <div class="assignment-course">Hindustani Vocal — Level 1</div>
+              </div>
+              <div class="assignment-meta">
+                <div class="assignment-due">Due 15 Aug 2026</div>
+                <span class="status-pill status-pending">Pending</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="assignment-info">
+                <div class="assignment-title">Teentaal Theka Practice</div>
+                <div class="assignment-course">Tala Fundamentals</div>
+              </div>
+              <div class="assignment-meta">
+                <div class="assignment-due">Due 18 Aug 2026</div>
+                <span class="status-pill status-pending">Pending</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="assignment-info">
+                <div class="assignment-title">Raag Identification Quiz</div>
+                <div class="assignment-course">Raag Vistar &amp; Improvisation</div>
+              </div>
+              <div class="assignment-meta">
+                <div class="assignment-due">Due 10 Aug 2026</div>
+                <span class="status-pill status-completed">Completed</span>
+              </div>
+            </li>
+
+            <li>
+              <div class="assignment-info">
+                <div class="assignment-title">Alap Recording — Bhairavi</div>
+                <div class="assignment-course">Hindustani Vocal — Level 1</div>
+              </div>
+              <div class="assignment-meta">
+                <div class="assignment-due">Due 5 Aug 2026</div>
+                <span class="status-pill status-completed">Completed</span>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+      </div><!-- /db-col-main -->
+
+      <!-- RIGHT COLUMN -->
+      <div class="db-col-side">
+
+        <!-- Quick links -->
+        <section class="panel db-panel db-quick-links" aria-labelledby="quicklinks-heading">
+          <h2 id="quicklinks-heading">Quick Access</h2>
+          <div class="quick-links-grid">
+            <a href="raaga-knowledge.html" class="quick-link-card ql-teal">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+              </span>
+              <span>Raaga<br>Knowledge</span>
+            </a>
+            <a href="tala-library.html" class="quick-link-card ql-maroon">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              </span>
+              <span>Tala<br>Library</span>
+            </a>
+            <a href="practice.html" class="quick-link-card ql-gold">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><polyline points="8 17 8 5 20 3 20 15"/><line x1="8" y1="11" x2="20" y2="9"/></svg>
+              </span>
+              <span>Practice<br>Tools</span>
+            </a>
+            <a href="compositions.html" class="quick-link-card ql-teal">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </span>
+              <span>Composi-<br>tions</span>
+            </a>
+            <a href="progress.html" class="quick-link-card ql-maroon">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              </span>
+              <span>My<br>Progress</span>
+            </a>
+            <a href="courses.html" class="quick-link-card ql-gold">
+              <span class="ql-icon" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </span>
+              <span>All<br>Courses</span>
+            </a>
+          </div>
+        </section>
+
+        <!-- Recently Practiced Raagas -->
+        <section class="panel db-panel" aria-labelledby="recent-raagas-heading">
+          <div class="db-panel-header">
+            <h2 id="recent-raagas-heading">Recent Raagas</h2>
+            <a href="raaga-knowledge.html" class="db-panel-link">Explore →</a>
+          </div>
+          <div id="recent-raagas" class="mini-raagas-list">
+
+            <a href="raaga-knowledge.html?raaga=yaman" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Yaman</div>
+                <div class="mini-raaga-sub">Last practiced 10 Aug 2026</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+            <a href="raaga-knowledge.html?raaga=bhairavi" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Bhairavi</div>
+                <div class="mini-raaga-sub">Last practiced 8 Aug 2026</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+            <a href="raaga-knowledge.html?raaga=bihag" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Bihag</div>
+                <div class="mini-raaga-sub">Last practiced 5 Aug 2026</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- Recommended Raagas -->
+        <section class="panel db-panel" aria-labelledby="recommended-heading">
+          <div class="db-panel-header">
+            <h2 id="recommended-heading">Recommended for You</h2>
+          </div>
+          <div id="recommended-raagas" class="mini-raagas-list">
+
+            <a href="raaga-knowledge.html?raaga=marwa" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Marwa</div>
+                <div class="mini-raaga-sub">Similar to Yaman, same time slot</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+            <a href="raaga-knowledge.html?raaga=kedar" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Kedar</div>
+                <div class="mini-raaga-sub">Same thaat as Yaman</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+            <a href="raaga-knowledge.html?raaga=kafi" class="mini-raaga-card">
+              <div>
+                <div class="mini-raaga-name">Raag Kafi</div>
+                <div class="mini-raaga-sub">Next in your course syllabus</div>
+              </div>
+              <span class="mini-raaga-arrow">→</span>
+            </a>
+
+          </div>
+        </section>
+
+        <!-- Daily Quote -->
+        <section class="panel db-panel db-guru-quote" aria-label="Daily quote">
+          <div class="db-quote-inner">
+            <span class="db-quote-mark" aria-hidden="true">"</span>
+            <p>Music gives a soul to the universe, wings to the mind, flight to the imagination, and life to everything.</p>
+            <cite>— Pt. Vishnu Narayan Bhatkhande</cite>
+          </div>
+        </section>
+
+      </div><!-- /db-col-side -->
+
+    </div><!-- /db-main-grid -->
+
+  </main>
+</div>
+
+<script src="../js/dashboard-page.js"></script>
+</body>
+</html>

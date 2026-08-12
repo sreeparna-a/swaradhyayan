@@ -1,0 +1,376 @@
+/* ============================================================
+   Swaradhyayan — Dashboard Page Styles
+   ============================================================ */
+
+/* ---- Welcome banner -------------------------------------- */
+.db-welcome {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.db-welcome h1 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: var(--maroon-dark);
+  letter-spacing: -.02em;
+}
+
+.db-welcome-actions {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: center;
+}
+
+/* ---- Stats row ------------------------------------------- */
+.db-stats-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 22px;
+}
+
+.stat-card {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 16px 16px 14px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.stat-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--maroon-dark);
+  line-height: 1;
+}
+.stat-unit {
+  font-size: .9rem;
+  color: var(--ink-soft);
+  font-weight: 400;
+  font-family: 'Inter', sans-serif;
+}
+
+.stat-label {
+  font-size: .72rem;
+  color: var(--ink-faint);
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+/* ---- Main 2-column grid ---------------------------------- */
+.db-main-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 16px;
+  align-items: start;
+}
+
+.db-col-main,
+.db-col-side {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ---- Panel base for dashboard ---------------------------- */
+.db-panel {
+  padding: 18px 18px 16px;
+}
+
+.db-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.db-panel-header h2 {
+  font-size: 1rem;
+  color: var(--ink);
+  font-family: 'Playfair Display', serif;
+}
+
+.db-panel-link {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--maroon);
+  text-decoration: none;
+}
+.db-panel-link:hover { text-decoration: underline; }
+
+/* ---- Courses list ---------------------------------------- */
+.courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.course-item {
+  padding: 12px 0;
+  border-top: 1px solid var(--border-light);
+}
+.course-item:first-child { border-top: none; padding-top: 0; }
+
+.course-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 3px;
+}
+
+.course-title {
+  font-weight: 600;
+  font-size: .88rem;
+  color: var(--ink);
+}
+
+.course-pct {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--maroon);
+  flex-shrink: 0;
+}
+
+.course-instructor {
+  font-size: .74rem;
+  color: var(--ink-faint);
+  margin-bottom: 8px;
+}
+
+.progress-bar {
+  height: 5px;
+  background: var(--cream-3);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--maroon), #c9556a);
+  border-radius: 999px;
+  transition: width .4s ease;
+}
+
+.course-next {
+  font-size: .76rem;
+  color: var(--ink-soft);
+}
+.course-next b { color: var(--ink); font-weight: 600; }
+
+/* ---- Assignments list ------------------------------------ */
+.assignments-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.assignments-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-light);
+}
+.assignments-list li:first-child { border-top: none; padding-top: 0; }
+
+.assignment-info { min-width: 0; flex: 1; }
+.assignment-title {
+  font-size: .85rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.assignment-course {
+  font-size: .72rem;
+  color: var(--ink-faint);
+}
+
+.assignment-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.assignment-due {
+  font-size: .7rem;
+  color: var(--ink-faint);
+}
+
+/* ---- Quick access links ---------------------------------- */
+.db-quick-links h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.quick-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.quick-link-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  padding: 12px 8px;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-size: .72rem;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.3;
+  transition: transform .18s, box-shadow .18s;
+  border: 1px solid transparent;
+}
+.quick-link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.ql-icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ql-teal   { background: #e8f3f0; color: var(--teal-dark); border-color: #c8e0d8; }
+.ql-teal .ql-icon { background: #dff0ea; color: var(--teal); }
+
+.ql-maroon { background: var(--maroon-light); color: var(--maroon-dark); border-color: #e8b8c2; }
+.ql-maroon .ql-icon { background: #f5d0d8; color: var(--maroon); }
+
+.ql-gold   { background: var(--gold-pale); color: #7a5c10; border-color: #e4d090; }
+.ql-gold .ql-icon { background: #f5e8c0; color: #8a6820; }
+
+/* ---- Mini raaga cards ------------------------------------ */
+.mini-raagas-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.mini-raaga-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-light);
+  text-decoration: none;
+  color: inherit;
+  transition: background .12s;
+  border-radius: 0;
+  cursor: pointer;
+}
+.mini-raaga-card:first-child { border-top: none; padding-top: 0; }
+.mini-raaga-card:hover { background: var(--cream-2); padding-left: 6px; padding-right: 6px; border-radius: var(--radius-sm); }
+
+.mini-raaga-name {
+  font-size: .84rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 2px;
+}
+
+.mini-raaga-sub {
+  font-size: .72rem;
+  color: var(--ink-faint);
+}
+
+.mini-raaga-arrow {
+  color: var(--maroon);
+  font-size: .88rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+/* ---- Daily guru quote ------------------------------------ */
+.db-guru-quote {
+  background: linear-gradient(135deg, #0e4d4c 0%, #6b1223 100%);
+  border: none;
+}
+
+.db-quote-inner {
+  position: relative;
+  padding: 8px 12px 6px;
+}
+
+.db-quote-mark {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 3rem;
+  line-height: .7;
+  color: rgba(255,255,255,.2);
+  position: absolute;
+  top: 4px; left: 0;
+}
+
+.db-guru-quote p {
+  font-size: .86rem;
+  font-style: italic;
+  color: rgba(255,255,255,.82);
+  line-height: 1.65;
+  margin: 10px 0 10px;
+  padding-left: 18px;
+}
+
+.db-guru-quote cite {
+  display: block;
+  font-size: .74rem;
+  font-weight: 600;
+  color: var(--gold-soft);
+  font-style: normal;
+  text-align: right;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1200px) {
+  .db-stats-row { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1000px) {
+  .db-main-grid { grid-template-columns: 1fr; }
+  .db-col-side { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+}
+
+@media (max-width: 760px) {
+  .db-stats-row { grid-template-columns: repeat(2, 1fr); }
+  .db-col-side { grid-template-columns: 1fr; }
+  .quick-links-grid { grid-template-columns: repeat(3, 1fr); }
+  .db-welcome { flex-direction: column; }
+}
+
+@media (max-width: 480px) {
+  .db-stats-row { grid-template-columns: 1fr 1fr; }
+}

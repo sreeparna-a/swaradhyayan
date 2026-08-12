@@ -1,0 +1,444 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Swaradhyayan — Indian Classical Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body class="landing-body">
+
+  <!-- ======================================================
+       NAVBAR
+       ====================================================== -->
+  <header class="l-nav" id="l-nav">
+    <!-- Thin gold rule at very top -->
+    <div class="l-nav-rule" aria-hidden="true"></div>
+
+    <div class="l-nav-inner">
+
+      <!-- Brand -->
+      <a class="l-brand" href="index.html" aria-label="Swaradhyayan home">
+        <div class="l-brand-icon" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="5.5" cy="17.5" r="2.5"/>
+            <circle cx="17.5" cy="15.5" r="2.5"/>
+            <polyline points="8 17 8 5 20 3 20 15"/>
+            <line x1="8" y1="11" x2="20" y2="9"/>
+          </svg>
+        </div>
+        <div class="l-brand-text">
+          <span class="l-brand-name">Swaradhyayan</span>
+          <span class="l-brand-sub">Classical Music Portal</span>
+        </div>
+      </a>
+
+      <!-- Centre nav pill -->
+      <nav class="l-nav-pill" aria-label="Site navigation">
+        <a href="#about"   class="l-nav-link">About</a>
+        <a href="#modules" class="l-nav-link">Modules</a>
+        <a href="#raagas"  class="l-nav-link">Raagas</a>
+        <a href="#voices"  class="l-nav-link">Voices</a>
+      </nav>
+
+      <!-- Right side -->
+      <div class="l-nav-right">
+        <a href="pages/dashboard.html" class="l-nav-cta" aria-label="Enter the portal">
+          <span>Enter Portal</span>
+          <svg class="l-nav-cta-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </a>
+
+        <!-- Mobile toggle -->
+        <button class="l-nav-toggle" id="l-nav-toggle" aria-label="Open menu" aria-expanded="false" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="l-nav-drawer" id="l-nav-drawer" aria-hidden="true">
+      <nav class="l-drawer-links" aria-label="Mobile navigation">
+        <a href="#about"   class="l-drawer-link">About</a>
+        <a href="#modules" class="l-drawer-link">Modules</a>
+        <a href="#raagas"  class="l-drawer-link">Raagas</a>
+        <a href="#voices"  class="l-drawer-link">Voices</a>
+      </nav>
+      <a href="pages/dashboard.html" class="l-drawer-cta">Enter Portal →</a>
+    </div>
+  </header>
+
+  <!-- ======================================================
+       HERO
+       ====================================================== -->
+  <section class="l-hero" aria-label="Welcome to Swaradhyayan">
+
+    <!-- Background layers -->
+    <div class="l-hero-bg" aria-hidden="true">
+      <div class="l-hero-ink"></div>
+      <div class="l-hero-glow l-hero-glow-a"></div>
+      <div class="l-hero-glow l-hero-glow-b"></div>
+      <div class="l-hero-grain"></div>
+    </div>
+
+    <!-- Staff lines decoration -->
+    <div class="l-staff" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <div class="l-hero-inner">
+
+      <div class="l-hero-eyebrow">
+        <span class="l-eyebrow-rule"></span>
+        <span>Indian Classical Music</span>
+        <span class="l-eyebrow-rule"></span>
+      </div>
+
+      <h1 class="l-hero-title">
+        The art of raga<br>
+        <em>studied deeply.</em>
+      </h1>
+
+      <p class="l-hero-body">
+        Swaradhyayan is a structured portal for students and teachers of Hindustani music —
+        bringing raaga knowledge, tala practice, guided courses, and personal progress
+        together in one carefully considered space.
+      </p>
+
+      <div class="l-hero-cta">
+        <a href="pages/dashboard.html" class="l-btn-primary">Open Dashboard</a>
+        <a href="#about" class="l-btn-ghost">Learn more</a>
+      </div>
+
+      <!-- Stat row -->
+      <dl class="l-hero-stats">
+        <div class="l-stat">
+          <dt>200+</dt>
+          <dd>Raagas</dd>
+        </div>
+        <div class="l-stat-divider" aria-hidden="true"></div>
+        <div class="l-stat">
+          <dt>10</dt>
+          <dd>Thaats</dd>
+        </div>
+        <div class="l-stat-divider" aria-hidden="true"></div>
+        <div class="l-stat">
+          <dt>50+</dt>
+          <dd>Compositions</dd>
+        </div>
+        <div class="l-stat-divider" aria-hidden="true"></div>
+        <div class="l-stat">
+          <dt>12</dt>
+          <dd>Tala Cycles</dd>
+        </div>
+      </dl>
+
+    </div>
+
+    <!-- Floating notation card -->
+    <div class="l-hero-card" aria-hidden="true">
+      <div class="l-notation-card">
+        <div class="l-nc-label">Raag Yaman · Aroh</div>
+        <div class="l-nc-swaras">
+          <span>N</span><span>R</span><span>G</span><span class="hi">M♯</span><span>P</span><span>D</span><span>N</span><span>S'</span>
+        </div>
+        <svg class="l-nc-staff" viewBox="0 0 280 64" xmlns="http://www.w3.org/2000/svg">
+          <line x1="0" y1="14" x2="280" y2="14" stroke="rgba(139,26,46,.18)" stroke-width="1"/>
+          <line x1="0" y1="24" x2="280" y2="24" stroke="rgba(139,26,46,.18)" stroke-width="1"/>
+          <line x1="0" y1="34" x2="280" y2="34" stroke="rgba(139,26,46,.18)" stroke-width="1"/>
+          <line x1="0" y1="44" x2="280" y2="44" stroke="rgba(139,26,46,.18)" stroke-width="1"/>
+          <line x1="0" y1="54" x2="280" y2="54" stroke="rgba(139,26,46,.18)" stroke-width="1"/>
+          <text x="4" y="58" font-size="48" font-family="Times New Roman,serif" fill="rgba(139,26,46,.22)">𝄞</text>
+          <ellipse cx="54" cy="38" rx="5.5" ry="4" fill="#8b1a2e" opacity=".7" transform="rotate(-18 54 38)"/>
+          <line x1="59" y1="38" x2="59" y2="16" stroke="#8b1a2e" stroke-width="1.3" opacity=".7"/>
+          <ellipse cx="82" cy="30" rx="5.5" ry="4" fill="#8b1a2e" opacity=".7" transform="rotate(-18 82 30)"/>
+          <line x1="87" y1="30" x2="87" y2="10" stroke="#8b1a2e" stroke-width="1.3" opacity=".7"/>
+          <ellipse cx="110" cy="44" rx="5.5" ry="4" fill="#c9a13b" opacity=".85" transform="rotate(-18 110 44)"/>
+          <line x1="115" y1="44" x2="115" y2="22" stroke="#c9a13b" stroke-width="1.3" opacity=".85"/>
+          <ellipse cx="138" cy="36" rx="5.5" ry="4" fill="#8b1a2e" opacity=".7" transform="rotate(-18 138 36)"/>
+          <line x1="143" y1="36" x2="143" y2="14" stroke="#8b1a2e" stroke-width="1.3" opacity=".7"/>
+          <ellipse cx="166" cy="24" rx="5.5" ry="4" fill="#8b1a2e" opacity=".7" transform="rotate(-18 166 24)"/>
+          <line x1="171" y1="24" x2="171" y2="4" stroke="#8b1a2e" stroke-width="1.3" opacity=".7"/>
+          <ellipse cx="194" cy="50" rx="5.5" ry="4" fill="#8b1a2e" opacity=".7" transform="rotate(-18 194 50)"/>
+          <line x1="199" y1="50" x2="199" y2="28" stroke="#8b1a2e" stroke-width="1.3" opacity=".7"/>
+        </svg>
+        <div class="l-nc-note">Thaat Kalyan · Evening · Sampoorna</div>
+      </div>
+    </div>
+
+    <div class="l-hero-scroll-hint" aria-hidden="true">
+      <span>Scroll</span>
+      <span class="l-scroll-line"></span>
+    </div>
+
+  </section>
+
+  <!-- ======================================================
+       ABOUT / INTRO STRIP
+       ====================================================== -->
+  <section class="l-about" id="about" aria-labelledby="about-heading">
+    <div class="l-section-inner">
+      <div class="l-about-grid">
+        <div class="l-about-left">
+          <p class="l-section-eyebrow">The Portal</p>
+          <h2 id="about-heading">Music as a<br><em>living tradition.</em></h2>
+        </div>
+        <div class="l-about-right">
+          <p>
+            Indian classical music is an oral tradition — passed from guru to shishya across centuries.
+            Swaradhyayan preserves that depth while giving it a precise, navigable structure.
+            Every raaga entry is annotated with aroh–avroh, pakad, chalan, characteristic phrases,
+            swara distribution, and guru notes.
+          </p>
+          <p>
+            Beyond knowledge, the portal tracks your practice, surfaces assignments from your teachers,
+            and recommends raagas that fit where you are in your journey.
+          </p>
+          <a href="pages/dashboard.html" class="l-about-link">
+            Begin your study
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       MODULES
+       ====================================================== -->
+  <section class="l-modules" id="modules" aria-labelledby="modules-heading">
+    <div class="l-section-inner">
+
+      <div class="l-modules-header">
+        <p class="l-section-eyebrow">What's inside</p>
+        <h2 id="modules-heading">Six modules,<br>one portal.</h2>
+      </div>
+
+      <div class="l-modules-grid">
+
+        <a href="pages/raaga-knowledge.html" class="l-module-card l-mc-featured" aria-label="Raaga Knowledge">
+          <div class="l-mc-number">01</div>
+          <h3>Raaga Knowledge</h3>
+          <p>Aroh, avroh, pakad, chalan, swara distribution wheel, notation staff, similar raagas, and guru notes — for every raaga in the database.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+        <a href="pages/tala-library.html" class="l-module-card" aria-label="Tala Library">
+          <div class="l-mc-number">02</div>
+          <h3>Tala Library</h3>
+          <p>Interactive tala cycles with theka, vibhag, and clap patterns. Teentaal, Ektaal, Jhaptaal and more.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+        <a href="pages/courses.html" class="l-module-card" aria-label="Courses">
+          <div class="l-mc-number">03</div>
+          <h3>Courses</h3>
+          <p>Structured lessons from experienced gurus — Hindustani vocal, instrumental, and rhythmic training with progress tracking built in.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+        <a href="pages/practice.html" class="l-module-card" aria-label="Practice Tools">
+          <div class="l-mc-number">04</div>
+          <h3>Practice</h3>
+          <p>Tanpura drone, metronome, riyaz log. Record your daily sessions and watch the streak grow.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+        <a href="pages/compositions.html" class="l-module-card" aria-label="Compositions">
+          <div class="l-mc-number">05</div>
+          <h3>Compositions</h3>
+          <p>Bandishes, bhajans, and instrumental pieces — with lyrics, notation, and contextual annotations.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+        <a href="pages/progress.html" class="l-module-card" aria-label="Progress">
+          <div class="l-mc-number">06</div>
+          <h3>Progress</h3>
+          <p>Visual charts of practice streaks, course completion, and raaga proficiency over time.</p>
+          <span class="l-mc-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       RAAGA SHOWCASE
+       ====================================================== -->
+  <section class="l-raagas" id="raagas" aria-labelledby="raagas-heading">
+    <div class="l-section-inner">
+
+      <div class="l-raagas-header">
+        <div>
+          <p class="l-section-eyebrow">Raaga Spotlight</p>
+          <h2 id="raagas-heading">Begin with<br>these three.</h2>
+        </div>
+        <a href="pages/raaga-knowledge.html" class="l-raagas-all">View all raagas →</a>
+      </div>
+
+      <div class="l-raagas-grid">
+
+        <a href="pages/raaga-knowledge.html?raaga=yaman" class="l-raaga-card l-rc-a" aria-label="Raag Yaman">
+          <div class="l-rc-meta">
+            <span class="l-rc-time">Evening · 6–9 PM</span>
+            <span class="l-rc-thaat">Kalyan</span>
+          </div>
+          <h3>Raag Yaman</h3>
+          <p>Sampoorna jati, teevra madhyam. A serene, devotional raaga often recommended to beginners for its clear and distinct identity.</p>
+          <div class="l-rc-swaras">
+            <span>S</span><span>R</span><span>G</span><span class="l-rc-hi">M♯</span><span>P</span><span>D</span><span>N</span>
+          </div>
+        </a>
+
+        <a href="pages/raaga-knowledge.html?raaga=bhairavi" class="l-raaga-card l-rc-b" aria-label="Raag Bhairavi">
+          <div class="l-rc-meta">
+            <span class="l-rc-time">Morning · 4–8 AM</span>
+            <span class="l-rc-thaat">Bhairavi</span>
+          </div>
+          <h3>Raag Bhairavi</h3>
+          <p>All komal swaras, deeply expressive. Traditionally performed as the closing raaga — full of longing and emotional depth.</p>
+          <div class="l-rc-swaras">
+            <span>S</span><span class="l-rc-lo">r</span><span class="l-rc-lo">g</span><span>M</span><span>P</span><span class="l-rc-lo">d</span><span class="l-rc-lo">n</span>
+          </div>
+        </a>
+
+        <a href="pages/raaga-knowledge.html?raaga=bihag" class="l-raaga-card l-rc-c" aria-label="Raag Bihag">
+          <div class="l-rc-meta">
+            <span class="l-rc-time">Late Night · 9 PM–12 AM</span>
+            <span class="l-rc-thaat">Bilawal</span>
+          </div>
+          <h3>Raag Bihag</h3>
+          <p>Both Ma swaras used, romantic and joyful character. A shadav–sampoorna raaga with a particularly inviting chalan for intermediate students.</p>
+          <div class="l-rc-swaras">
+            <span>S</span><span>G</span><span>M</span><span class="l-rc-hi">M♯</span><span>P</span><span>D</span><span>N</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       QUOTE BREAK
+       ====================================================== -->
+  <section class="l-quote-break" aria-label="Musical wisdom">
+    <div class="l-section-inner">
+      <blockquote class="l-blockquote">
+        <p>
+          "Nada is the source of all music. Before the note,<br>
+          before the rhythm, there is only listening."
+        </p>
+        <cite>— Pandit Vishnu Narayan Bhatkhande</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       TESTIMONIALS / VOICES
+       ====================================================== -->
+  <section class="l-voices" id="voices" aria-labelledby="voices-heading">
+    <div class="l-section-inner">
+
+      <p class="l-section-eyebrow">Voices</p>
+      <h2 id="voices-heading">From students and teachers.</h2>
+
+      <div class="l-voices-grid">
+
+        <figure class="l-voice-card">
+          <blockquote>
+            <p>The swara distribution wheel changed how I think about a raaga's architecture. I've used many tools — nothing has this depth.</p>
+          </blockquote>
+          <figcaption>
+            <span class="l-voice-name">Arjun Patil</span>
+            <span class="l-voice-role">Sitar student, Pune</span>
+          </figcaption>
+        </figure>
+
+        <figure class="l-voice-card l-vc-offset">
+          <blockquote>
+            <p>Assignments, progress tracking, and the raaga library — all in one place. My practice has never been this consistent.</p>
+          </blockquote>
+          <figcaption>
+            <span class="l-voice-name">Shruti Rao</span>
+            <span class="l-voice-role">Vocal student, Bengaluru</span>
+          </figcaption>
+        </figure>
+
+        <figure class="l-voice-card">
+          <blockquote>
+            <p>Every student I teach now uses Swaradhyayan to supplement their lessons. The raaga identification tools are invaluable.</p>
+          </blockquote>
+          <figcaption>
+            <span class="l-voice-name">Pt. Ravi Deshmukh</span>
+            <span class="l-voice-role">Guru &amp; Composer</span>
+          </figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FINAL CTA
+       ====================================================== -->
+  <section class="l-cta" aria-label="Enter the portal">
+    <div class="l-cta-inner">
+      <div class="l-cta-ornament" aria-hidden="true">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="5.5" cy="17.5" r="2.5"/>
+          <circle cx="17.5" cy="15.5" r="2.5"/>
+          <polyline points="8 17 8 5 20 3 20 15"/>
+          <line x1="8" y1="11" x2="20" y2="9"/>
+        </svg>
+      </div>
+      <h2>Your riyaz begins here.</h2>
+      <p>Enter the dashboard and continue where you left off.</p>
+      <a href="pages/dashboard.html" class="l-btn-primary l-btn-lg">
+        Enter Swaradhyayan
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ======================================================
+       FOOTER
+       ====================================================== -->
+  <footer class="l-footer">
+    <div class="l-footer-inner">
+      <div class="l-footer-top">
+        <a class="l-brand l-footer-brand" href="index.html" aria-label="Swaradhyayan">
+          <svg class="l-brand-mark" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="5.5" cy="17.5" r="2.5"/>
+            <circle cx="17.5" cy="15.5" r="2.5"/>
+            <polyline points="8 17 8 5 20 3 20 15"/>
+            <line x1="8" y1="11" x2="20" y2="9"/>
+          </svg>
+          <span class="l-brand-name">Swaradhyayan</span>
+        </a>
+        <nav class="l-footer-links" aria-label="Footer navigation">
+          <a href="pages/dashboard.html">Dashboard</a>
+          <a href="pages/raaga-knowledge.html">Raagas</a>
+          <a href="pages/tala-library.html">Talas</a>
+          <a href="pages/courses.html">Courses</a>
+          <a href="pages/practice.html">Practice</a>
+          <a href="pages/compositions.html">Compositions</a>
+          <a href="pages/assignments.html">Assignments</a>
+          <a href="pages/progress.html">Progress</a>
+        </nav>
+      </div>
+      <div class="l-footer-bottom">
+        <p>© 2026 Swaradhyayan. Indian Classical Music Portal.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/landing.js"></script>
+</body>
+</html>

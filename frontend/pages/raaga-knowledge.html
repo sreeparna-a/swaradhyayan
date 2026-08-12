@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Swaradhyayan — Raaga Knowledge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+
+<!-- ========================================================
+     TOP BAR
+     ======================================================== -->
+<header class="topbar">
+  <a class="brand" href="../index.html" aria-label="Swaradhyayan home">
+    <div class="brand-icon" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/>
+        <polyline points="8 17 8 5 20 3 20 15"/>
+        <line x1="8" y1="11" x2="20" y2="9"/>
+      </svg>
+    </div>
+    <span class="brand-copy">
+      <span class="brand-title">Swaradhyayan</span>
+      <span class="brand-subtitle">Indian Classical Music Portal</span>
+    </span>
+  </a>
+
+  <div class="topbar-search" role="search">
+    <span class="search-icon" aria-hidden="true">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+    </span>
+    <input type="search" placeholder="Search raagas, talas, compositions..." aria-label="Global search">
+    <span class="kbd">⌘K</span>
+  </div>
+
+  <div class="topbar-right">
+    <button class="notif-btn" aria-label="Notifications (3 unread)" type="button">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+      <span class="notif-badge" aria-hidden="true">3</span>
+    </button>
+    <div class="user-chip" role="button" tabindex="0" aria-label="User menu">
+      <div class="user-avatar" aria-hidden="true">AS</div>
+      <div class="user-info">
+        <span class="user-name">Ananya Sharma</span>
+        <span class="user-role">Student</span>
+      </div>
+      <span class="user-chevron" aria-hidden="true">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><polyline points="6 9 12 15 18 9"/></svg>
+      </span>
+    </div>
+  </div>
+</header>
+
+<!-- ========================================================
+     APP BODY
+     ======================================================== -->
+<div class="app-body">
+
+  <!-- ---- SIDEBAR ---- -->
+  <aside class="sidebar" aria-label="Main navigation">
+    <nav class="nav-list">
+
+      <a class="nav-item" href="dashboard.html" data-page="dashboard">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        Dashboard
+      </a>
+
+      <a class="nav-item" href="courses.html" data-page="courses">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        Courses
+      </a>
+
+      <a class="nav-item" href="practice.html" data-page="practice">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><polyline points="8 17 8 5 20 3 20 15"/><line x1="8" y1="11" x2="20" y2="9"/></svg>
+        Practice
+      </a>
+
+      <a class="nav-item active" href="raaga-knowledge.html" data-page="raaga-knowledge">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        Raaga Knowledge
+      </a>
+
+      <a class="nav-item" href="tala-library.html" data-page="tala-library">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        Tala Library
+      </a>
+
+      <a class="nav-item" href="compositions.html" data-page="compositions">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Compositions
+      </a>
+
+      <a class="nav-item" href="assignments.html" data-page="assignments">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg>
+        Assignments
+      </a>
+
+      <a class="nav-item" href="progress.html" data-page="progress">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        Progress
+      </a>
+
+    </nav>
+
+    <div class="sidebar-cta">
+      <div class="sidebar-cta-star" aria-hidden="true">☆</div>
+      <div class="sidebar-cta-title">Keep going!</div>
+      <p class="sidebar-cta-text">Your dedication brings you closer to excellence.</p>
+      <a href="progress.html" class="sidebar-cta-link">View Progress →</a>
+    </div>
+  </aside>
+
+  <!-- ---- MAIN CONTENT ---- -->
+  <main class="content">
+
+    <section class="page-header" aria-label="Page header">
+      <div>
+        <h1>Raaga Knowledge Module</h1>
+        <p class="page-sub">Explore, compare, and learn raagas</p>
+      </div>
+      <div class="page-header-actions">
+        <button id="add-favorite-btn" class="add-raagas-btn" type="button" aria-pressed="false">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          Add to My Raagas
+        </button>
+        <button class="btn-icon" type="button" aria-label="Share">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="filter-panel" aria-label="Raaga filters">
+      <div class="filter-field">
+        <label for="f-search">Search Raaga</label>
+        <div class="input-shell">
+          <span class="input-icon" aria-hidden="true">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input id="f-search" type="text" placeholder="Search by raaga name..." autocomplete="off">
+        </div>
+        <div class="search-suggest" id="search-suggest" role="listbox" aria-label="Search suggestions"></div>
+      </div>
+
+      <div class="filter-field">
+        <label for="f-thaat">Thaat</label>
+        <select id="f-thaat">
+          <option value="">All Thaats</option>
+          <option selected>Kalyan</option>
+          <option>Bilawal</option>
+          <option>Kafi</option>
+          <option>Bhairavi</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="f-time">Time of Performance</label>
+        <select id="f-time">
+          <option value="">All Times</option>
+          <option selected>Evening (6 PM – 9 PM)</option>
+          <option>Morning (4 AM – 8 AM)</option>
+          <option>Night (9 PM – 12 AM)</option>
+          <option>All Seasons</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="f-mood">Mood / Rasa</label>
+        <select id="f-mood">
+          <option value="">All Moods</option>
+          <option selected>Peaceful, Devotional</option>
+          <option>Joyful</option>
+          <option>Romantic</option>
+          <option>Serene</option>
+        </select>
+      </div>
+
+      <div class="filter-field">
+        <label for="f-difficulty">Difficulty Level</label>
+        <select id="f-difficulty">
+          <option value="">All Levels</option>
+          <option selected>Intermediate</option>
+          <option>Beginner</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+
+      <div class="filter-actions">
+        <button id="apply-filters-btn" class="apply-btn" type="button">Apply Filters</button>
+        <button id="reset-filters-btn" class="reset-btn" type="button">
+          <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-4.5"/></svg>
+          Reset
+        </button>
+      </div>
+    </section>
+
+    <div class="results-strip" id="results-strip" hidden></div>
+
+    <div class="empty-state" id="empty-state" hidden role="status">
+      <p>No raagas match your filters.</p>
+    </div>
+    <div class="empty-state" id="error-state" hidden role="alert">
+      <p>Could not load raaga data. Please ensure the API server is running.</p>
+    </div>
+
+    <div id="raaga-panels">
+      <div class="dashboard-grid">
+
+        <!-- COL 1: Raag info card -->
+        <article class="panel raaga-panel" aria-label="Raaga detail">
+          <header class="raaga-panel-header" id="raaga-name">Raag Yaman</header>
+
+          <dl class="raaga-details" id="raaga-fields">
+            <div class="detail-row">
+              <dt>Thaat</dt><dd>Kalyan</dd>
+              <dt>Jati</dt><dd>Sampoorna – Sampoorna</dd>
+            </div>
+            <div class="detail-row"><dt>Aroh</dt><dd>N R G Mᵀ P D N S'</dd></div>
+            <div class="detail-row"><dt>Avroh</dt><dd>S' N D P Mᵀ G R S</dd></div>
+            <div class="detail-row">
+              <dt>Vadi</dt><dd>Gandhar (G)</dd>
+              <dt>Samvadi</dt><dd>Nishad (N)</dd>
+            </div>
+            <div class="detail-row"><dt>Pakad</dt><dd>N R G Mᵀ P, D N S' | S' N D P, Mᵀ G R S</dd></div>
+            <div class="detail-row"><dt>Chalan</dt><dd>N R G Mᵀ, G R S | R G Mᵀ P, D N D P, Mᵀ G R</dd></div>
+            <div class="detail-row">
+              <dt>Nyas Swar</dt><dd>G, N</dd>
+              <dt>Varjit Swar</dt><dd>— (None)</dd>
+            </div>
+            <div class="detail-row"><dt>Time of Performance</dt><dd>Evening (6 PM – 9 PM)</dd></div>
+            <div class="detail-row"><dt>Season</dt><dd>All Seasons (Best in Sharad)</dd></div>
+            <div class="detail-row"><dt>Rasa / Mood</dt><dd>Peaceful, Devotional, Serene</dd></div>
+          </dl>
+
+          <div class="signature-note" id="signature-note">
+            ℹ️ Teevra Ma (Mᵀ) is the signature swara of Raag Yaman.
+          </div>
+        </article>
+
+        <!-- COL 2: Notation + Audio + Distribution -->
+        <div class="mid-column">
+
+          <div class="panel notation-panel">
+            <div class="notation-header">
+              <span class="notation-header-title">Swara Phrase (Notation)</span>
+              <button class="btn-icon" type="button" aria-label="Expand notation" style="padding:5px 8px">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+              </button>
+            </div>
+            <div class="notation-svg-wrap">
+              <div id="notation-staff"></div>
+            </div>
+          </div>
+
+          <article class="panel audio-panel" aria-label="Audio demos">
+            <h3>Audio Demos</h3>
+
+            <div class="audio-item" data-freq="392">
+              <div class="audio-avatar-circle" aria-hidden="true">🎤</div>
+              <div class="audio-inner">
+                <div class="audio-title">Vocal Demo</div>
+                <div class="audio-controls">
+                  <button class="audio-play-btn" type="button" aria-label="Play Vocal Demo">▶</button>
+                  <div class="audio-waveform" aria-hidden="true" id="wave1"></div>
+                </div>
+              </div>
+              <span class="audio-timestamp">00:00 / 03:24</span>
+              <button class="audio-menu-btn" type="button" aria-label="More options">⋮</button>
+            </div>
+
+            <div class="audio-item" data-freq="329">
+              <div class="audio-avatar-circle" aria-hidden="true">🪕</div>
+              <div class="audio-inner">
+                <div class="audio-title">Instrumental Demo (Sitar)</div>
+                <div class="audio-controls">
+                  <button class="audio-play-btn" type="button" aria-label="Play Sitar Demo">▶</button>
+                  <div class="audio-waveform" aria-hidden="true" id="wave2"></div>
+                </div>
+              </div>
+              <span class="audio-timestamp">00:00 / 03:37</span>
+              <button class="audio-menu-btn" type="button" aria-label="More options">⋮</button>
+            </div>
+
+            <p class="demo-note">Demo tones are generated in-browser as placeholders for real recordings.</p>
+          </article>
+
+          <article class="panel distribution-section" aria-label="Swara distribution">
+            <h3>Swara Distribution</h3>
+            <div class="distribution-wrap">
+              <svg id="distribution-circle" viewBox="0 0 260 260" aria-label="Swara distribution wheel" role="img" width="160" height="160"></svg>
+              <ul class="legend" aria-label="Legend">
+                <li><span class="dot dot-aroh" aria-hidden="true"></span> Aroh (Ascending)</li>
+                <li><span class="dot dot-avroh" aria-hidden="true"></span> Avroh (Descending)</li>
+                <li><span class="dot dot-nyas" aria-hidden="true"></span> Nyas (Resting)</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- COL 3: Phrases + Similar + Quick Facts -->
+        <aside class="side-column" aria-label="Raaga supplementary info">
+
+          <div class="panel panel-box" aria-label="Characteristic phrases">
+            <h3>Characteristic Phrases</h3>
+            <ul class="phrase-list" id="phrase-list">
+              <li class="phrase-item">N R G Mᵀ P</li>
+              <li class="phrase-item">G Mᵀ P, D N S'</li>
+              <li class="phrase-item">S' N D P, Mᵀ G R</li>
+              <li class="phrase-item">R G Mᵀ, G R S</li>
+            </ul>
+            <button class="view-more-btn" type="button">View More Phrases →</button>
+          </div>
+
+          <div class="panel panel-box" aria-label="Similar raagas">
+            <h3>Similar Raagas</h3>
+            <div class="similar-grid" id="similar-list">
+              <div class="mini-card" tabindex="0" role="button" aria-label="View Kalyan">
+                <div class="mini-art mini-art-1" aria-hidden="true">🪷</div>
+                <div class="mini-name">Kalyan</div>
+                <div class="mini-rel">Same Thaat</div>
+                <div class="mini-view">View →</div>
+              </div>
+              <div class="mini-card" tabindex="0" role="button" aria-label="View Puriya Kalyan">
+                <div class="mini-art mini-art-2" aria-hidden="true">🌸</div>
+                <div class="mini-name">Puriya Kalyan</div>
+                <div class="mini-rel">Evening Raaga</div>
+                <div class="mini-view">View →</div>
+              </div>
+              <div class="mini-card" tabindex="0" role="button" aria-label="View Shuddha Kalyan">
+                <div class="mini-art mini-art-3" aria-hidden="true">🎼</div>
+                <div class="mini-name">Shuddha Kalyan</div>
+                <div class="mini-rel">Different Prayog</div>
+                <div class="mini-view">View →</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel panel-box" aria-label="Quick facts">
+            <h3>Quick Facts</h3>
+            <ul class="quick-facts" id="quick-facts">
+              <li><span class="qf-icon" aria-hidden="true">🎵</span><span>Thaat: <b>Kalyan</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">🕒</span><span>Time: <b>6 PM – 9 PM</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">📋</span><span>Jati: <b>Sampoorna</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">⭐</span><span>Vadi: <b>G</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">🎶</span><span>Notes Used: <b>7</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">⭐</span><span>Samvadi: <b>N</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">#</span><span>Teevra Swar: <b>Ma (Mᵀ)</b></span></li>
+              <li><span class="qf-icon" aria-hidden="true">✅</span><span>Practice Friendly: <b>Yes</b></span></li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+
+      <section class="panel guru-notes-section" aria-label="Learning tips">
+        <div class="guru-notes-grid">
+          <div class="guru-avatar" aria-hidden="true">🧘</div>
+          <div class="guru-tips">
+            <h3>Learning Tips / Guru Notes</h3>
+            <ul id="learning-tips">
+              <li>Focus on the smooth glide (meend) between N–R and G–Mᵀ.</li>
+              <li>Do not touch Ma natural; only use Teevra Ma (Mᵀ).</li>
+              <li>Spend time on the Pakad and Chalan to internalize the identity of Yaman.</li>
+            </ul>
+          </div>
+          <blockquote class="guru-quote">
+            <span class="guru-quote-open" aria-hidden="true">"</span>
+            <p id="guru-quote-text">Yaman is a Raag of light and devotion.<br>Let your Riyaz in the evening be your offering.</p>
+            <cite class="guru-quote-author" id="guru-quote-author">— Pt. Omkarnath Thakur</cite>
+            <span class="guru-quote-close" aria-hidden="true">"</span>
+          </blockquote>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+</div>
+
+<script src="../js/raaga-knowledge.js"></script>
+</body>
+</html>
